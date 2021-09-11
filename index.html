@@ -25,30 +25,7 @@
 <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "103257718650453");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+   
     <!-- .preloader -->
     <div class="preloader"></div>
     
@@ -702,7 +679,7 @@ A group of well-experienced teaching staff along with the non-teaching staff are
     </section>
     <!-- testimonial section end -->
 
-    <!-- newsletter section -->
+    <!-- newsletter section 
     <section class="newsletter-section">
         <div class="container">
             <div class="row">
@@ -720,7 +697,7 @@ A group of well-experienced teaching staff along with the non-teaching staff are
             </div>
         </div>
     </section>
-    <!-- newsletter section end -->
+    newsletter section end -->
 
     
     <!-- main-footer area -->
@@ -806,6 +783,30 @@ A group of well-experienced teaching staff along with the non-teaching staff are
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
 
+     <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103257718650453");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 <!--jquery js --->
 
