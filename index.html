@@ -23,46 +23,11 @@
 <!-- page wrapper -->
 <body class="body_wrapper">
      
-     <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "103257718650453");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v13.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-     
-   
     <!-- .preloader -->
     <div class="preloader"></div>
    
-
-
  <!-- main header area -->
  <header class="main-header">
-
 
         <!-- header lower/fixed-header -->     
         <div class="header-lower">
@@ -101,13 +66,11 @@
                                                 <li><a href="academic-departments">Academic Departments</a></li> 
                                             </ul>
                                         </li>
-                                        <li ><a href="online-payment">Online Payment</a>
-                                            <ul>
-                                              
-                                          </ul>
-                                        </li>
+                                        <li ><a href="online-payment">Online Registration From</a>
+                                           
                                           <li class="dropdown"><a href="javascript:void(0)">Extra</a>
                                             <ul>
+                                                 <li ><a href="online-payment">Online Payment</a></li>
                                                 <li><a href="facilities">Facilities</a></li>
                                                 <li><a href="event">Events</a></li>
                                                 <li><a href="news">News</a></li>
@@ -117,14 +80,15 @@
                                             </ul>
                                         </li>
                                        
-                                        <li><a href="contact">Contact</a>
-                                        </li>
+                                        
+                                       
                                         <li class="dropdown"><a href="#">About Us</a>
                                             <ul>
                                                 
                                                 <li><a href="message">Principal's Message</a></li>
                                                 <li><a href="vision-mission-objectives">Mission,Vision &amp; Objective</a></li>
                                           <li><a href="staff&members"> Staff & Members</a></li>
+                                                 <li><a href="contact">Contact</a>  </li>
     
                                            
                                             </ul>
